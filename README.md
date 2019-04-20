@@ -1,4 +1,4 @@
-# github_users_details
+# GitHub Users Details
 Details of Github Users, Search any users
 
 
