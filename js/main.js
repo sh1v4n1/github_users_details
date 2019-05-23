@@ -65,3 +65,15 @@ function show(username) {
         console.log(error);
     });
 }
+
+
+
+document.getElementById("followingURL").addEventListener('click', () => {
+    console.log("followingURL ");
+});
+document.getElementById("reposUrl").addEventListener('click', () => {
+    console.log("All Repos");
+});
+document.getElementById("followersURL").addEventListener('click', () => {
+    console.log("followersURL");
+})
