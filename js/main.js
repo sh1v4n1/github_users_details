@@ -37,8 +37,8 @@ function show(username) {
 
 
     loadData(username).then(function (response) {
-        if(response.login == null){
-            alert("We can't find this "+username+" Username.\nSo we are showing you Bharat's profile.\nTry to find again");
+        if (response.login == null) {
+            alert("We can't find this " + username + " Username.\nSo we are showing you Bharat's profile.\nTry to find again");
             show("bharatagsrwal");
         }
         document.getElementById("image").src = response.avatar_url;
@@ -47,15 +47,20 @@ function show(username) {
         document.getElementById("username").innerHTML = response.login;
         document.getElementById("email").innerHTML = (response.email == null) ? "Not Given (Email)" : response.email;
         document.getElementById("location").innerHTML = (response.location == null) ? '<i class="fas fa-map-marked-alt"></i> Not Given' : '<i class="fas fa-map-marked-alt"></i>' + response.location;
-        document.getElementById("bio").innerHTML = (response.bio==null)?"We Don't know "+response.login+"'s Bio":response.bio;
+        document.getElementById("bio").innerHTML = (response.bio == null) ? "We Don't know " + response.login + "'s Bio" : response.bio;
         document.getElementById("repos").innerHTML = response.public_repos;
         document.getElementById("followers").innerHTML = response.followers;
         document.getElementById("following").innerHTML = response.following;
         document.getElementById("website").href = response.blog;
         document.getElementById("github").href = response.html_url;
-        document.getElementById("reposUrl").href = "https://github.com/"+response.login+"?tab=repositories";
-        document.getElementById("folURL").href = "https://github.com/"+response.login+"?tab=followers";
-        document.getElementById("follURL").href = "https://github.com/"+response.login+"?tab=following";
+        // document.getElementById("reposUrl").href = "https://github.com/" + response.login + "?tab=repositories";
+        //document.getElementById("folURL").href = "https://github.com/"+response.login+"?tab=followers";
+        // document.getElementById("follURL").href = "https://github.com/" + response.login + "?tab=following";
+
+        document.getElementById("numberOfFollowing").textContent = response.following;
+        document.getElementById("numberOfFollowers").textContent = response.followers;
+        document.getElementById("numberOfRepos").textContent = response.public_repos;
+
     }).catch(function (error) {
         console.log(error);
     });
