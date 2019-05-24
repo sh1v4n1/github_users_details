@@ -15,7 +15,8 @@ body {
     background-image: url(../images/background.jpg);
     height: 200px;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .roundBorder {
