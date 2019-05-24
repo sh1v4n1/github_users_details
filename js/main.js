@@ -115,6 +115,8 @@ function createRepos(element) {
 
 document.getElementById("reposUrl").addEventListener('click', () => {
     let id = mainData.getAttribute("data-id");
+    document.getElementById("card-data-view").innerHTML = "";
+
     console.log("All Repos");
     fetch("https://api.github.com/users/" + id + "/repos").then(function (response) {
         return response.json();

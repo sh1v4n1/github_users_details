@@ -172,7 +172,7 @@
     </div>
 
     <!-- Modal for followers -->
-    <div id="followersModal" class="modal bottom-sheet">
+    <div id="followersModal" class="modal bottom-sheet modal-fixed-footer">
         <div class="modal-content">
             <h4 class="left">Followers (<span id="numberOfFollowers"></span>)</h4><a class="modal-close"><i
                     class="material-icons right waves-effect border-radius">close</i></a>
@@ -185,7 +185,7 @@
     </div>
 
     <!-- Modal for Following -->
-    <div id="followingModal" class="modal bottom-sheet">
+    <div id="followingModal" class="modal bottom-sheet modal-fixed-footer">
         <div class="modal-content">
             <h4 class="left">Following (<span id="numberOfFollowing"></span>)</h4><a class="modal-close"><i
                     class="material-icons right waves-effect border-radius">close</i></a>
@@ -199,12 +199,12 @@
     </div>
 
     <!-- Modal for Repos -->
-    <div id="viewRepos" class="modal bottom-sheet">
-        <div class="modal-content">
+    <div id="viewRepos" class="modal bottom-sheet modal-fixed-footer">
+        <div class="modal-content" id="tt">
             <h4 class="left">Public Repos (<span id="numberOfRepos"></span>)</h4><a class="modal-close"><i
                     class="material-icons right waves-effect border-radius">close</i></a>
             <p style="margin-top:70px" id="card-data-view">
-
+                <div class="pp"></div>
             </p>
         </div>
         <div class="modal-footer">

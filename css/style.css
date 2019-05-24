@@ -108,7 +108,7 @@ p {
 }
 
 
-.modal.bottom-sheet {
+.modal.bottom-sheet.modal-fixed-footer {
     max-height: 100% !important;
     height: 100%;
 }
