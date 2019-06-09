@@ -55,10 +55,6 @@ function show(username) {
         document.getElementById("following").innerHTML = response.following;
         document.getElementById("website").href = response.blog;
         document.getElementById("github").href = response.html_url;
-        // document.getElementById("reposUrl").href = "https://github.com/" + response.login + "?tab=repositories";
-        //document.getElementById("folURL").href = "https://github.com/"+response.login+"?tab=followers";
-        // document.getElementById("follURL").href = "https://github.com/" + response.login + "?tab=following";
-
         document.getElementById("numberOfFollowing").textContent = response.following;
         document.getElementById("numberOfFollowers").textContent = response.followers;
         document.getElementById("numberOfRepos").textContent = response.public_repos;
